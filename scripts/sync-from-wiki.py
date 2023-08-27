@@ -138,15 +138,12 @@ def generate_snippets(categories: List[str], snippets: List[TSnippet]) -> str:
         ]
         if not cat_snippets:
             continue
-        output.append(f"## {category}")
+        output.append(f"* {category}")
         for snippet in cat_snippets:
             title = snippet["title"]
             wikifile = snippet["wikifile"]
-            preview = format_preview(snippet["preview"])
-            output.append(f"### {title}")
-            if preview:
-                output.append(preview)
-            output.append(generate_markdown_link(wikifile, "View snippet in Wiki"))
+            link = generate_markdown_link(wikifile, title)
+            output.append(f"  * {link}")
 
     output.append("")
 
