@@ -10,6 +10,6 @@ For more information about how to do this, see the wiki page about [Contributing
 
 # DROID tricks
 * General
-  * [Single button mute with clocked un‐mute a la algoquencer](../../wiki/Single-button-mute-with-clocked-un‐mute-a-la-algoquencer.md)
+  * [Single button mute with clocked un‐mute a la algoquencer](../../wiki/Single-button-mute-with-clocked-un‐mute-a-la-algoquencer)
 * Archived
-  * [Using mixers to add selects to your LEDs and possibly other things.](../../wiki/Using-mixers-to-add-selects-to-your-LEDs-and-possibly-other-things..md)
+  * [Using mixers to add selects to your LEDs and possibly other things.](../../wiki/Using-mixers-to-add-selects-to-your-LEDs-and-possibly-other-things.)
