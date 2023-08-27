@@ -1,0 +1,22 @@
+---
+name: Recreate README.md from Wiki pages
+
+on:
+  gollum:
+  workflow_dispatch:
+
+jobs:
+  recreate-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+      - name: Check out wiki
+        uses: actions/checkout@v2
+        with:
+          repository: 'Eising/droid-tricks.wiki'
+          ref: master
+          path: 'droid-tricks.wiki'
+      - name: Update README.md if needed
+        run: ./scripts/sync.sh $GITHUB_WORKSPACE/droid-tricks.wiki
