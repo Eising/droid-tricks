@@ -10,6 +10,8 @@ from typing import List, Dict, Optional
 
 skipped_files = ["Home.md", "Categories.md", "Contributing.md"]
 
+wikibase = "https://github.com/Eising/droid-tricks/wiki/Single-button-mute-with-clocked-un%E2%80%90mute-a-la-algoquencer"
+
 DEFAULT_CATEGORY = "Uncategorized"
 
 OUTPUT_FILE = "README.md"
@@ -86,6 +88,8 @@ def get_snippets(workdir: Optional[str] = None) -> List[TSnippet]:
 
 def generate_markdown_link(wikipage: str, text: str) -> str:
     """Generate a markdown link."""
+    if wikipage.endswith(".md"):
+        wikipage.replace(".md", "")
     wikilink = f"../../wiki/{wikipage}"
     return f"[{text}]({wikilink})"
 
