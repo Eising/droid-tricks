@@ -58,7 +58,7 @@ def get_snippets(workdir: Optional[str] = None) -> List[TSnippet]:
     snippets: List[TSnippet] = []
     for mdfile in glob(f"{workdir}*.md"):
         filename = Path(mdfile).name
-        if filename in skipped_files:
+        if filename in skipped_files or filename.startswith("_"):
             continue
         category = DEFAULT_CATEGORY
         title = filename.replace("-", " ").replace(".md", "")
