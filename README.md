@@ -9,6 +9,14 @@ Just add a page to the [Wiki](../../wiki/).
 For more information about how to do this, see the wiki page about [Contributing](../../wiki/Contributing).
 
 # DROID tricks
+## Uncategorized
+### Using mixers to add selects to your LEDs and possibly other things.
+This snippet is not very useful from the blue-3 version, but included if someone
+is still on an older version and need this functionality.
+
+It allows you to implement `select` for things that do not support it.
+
+[View snippet in Wiki](../../wiki//home/runner/work/droid-tricks/droid-tricks/droid-tricks.wiki/Using-mixers-to-add-selects-to-your-LEDs-and-possibly-other-things..md)
 ## General
 ### Single button mute with clocked un‐mute a la algoquencer
 Low on buttons and want the `[algoquencer]`'s timesynced unmute behavior?
