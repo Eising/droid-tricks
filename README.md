@@ -4,7 +4,7 @@ DROID tricks contains a list of various tricks tricks for the [DROID Universal C
 
 Anyone can add their own tricks to this repository, and it's very simple.
 
-Just add a page to the Wiki.
+Just add a page to the [Wiki](../../wiki/).
 
 For more information about how to do this, see the wiki page about [Contributing](../../wiki/Contributing).
 
