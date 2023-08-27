@@ -1,0 +1,9 @@
+#+title: Contributing
+
+To add something to the list, you need just to have a Github account.
+
+Then, simply click the README.org file in the file list, and click the pencil icon.
+
+Add your contribution where they make the most sense, and submit them.
+
+I'll review them and add them as fast as I can.
