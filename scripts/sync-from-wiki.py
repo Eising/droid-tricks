@@ -89,7 +89,7 @@ def get_snippets(workdir: Optional[str] = None) -> List[TSnippet]:
 def generate_markdown_link(wikipage: str, text: str) -> str:
     """Generate a markdown link."""
     if wikipage.endswith(".md"):
-        wikipage.replace(".md", "")
+        wikipage = wikipage.replace(".md", "")
     wikilink = f"../../wiki/{wikipage}"
     return f"[{text}]({wikilink})"
 
