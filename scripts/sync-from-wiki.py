@@ -74,7 +74,7 @@ def get_snippets(workdir: Optional[str] = None) -> List[TSnippet]:
 
         snippets.append(
             {
-                "wikifile": mdfile,
+                "wikifile": filename,
                 "title": title,
                 "category": category,
                 "preview": preview,
@@ -86,7 +86,7 @@ def get_snippets(workdir: Optional[str] = None) -> List[TSnippet]:
 
 def generate_markdown_link(wikipage: str, text: str) -> str:
     """Generate a markdown link."""
-    wikilink = f"../../../wiki/{wikipage}"
+    wikilink = f"../../wiki/{wikipage}"
     return f"[{text}]({wikilink})"
 
 
