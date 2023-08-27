@@ -18,5 +18,5 @@ if [ "$md5" != "$new_md5" ]; then
     git config --global user.name "Update Tricks from Wiki Action"
     git add README.md
     git commit -a -m "Update README.md at $(date)"
-    git push origin master
+    git push origin main
 fi
